@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PressMart</title>
+</head>
+
+<body>
+    <div class="mb-body-overlay"></div>
+    <header>
+        <div class="d-flex flex-column has-main-bg-color">
+            <nav class="d-flex align-items-center mb-5">
+                <div class="w-100 overflow-hidden">
+                    <div class="row p-3 px-md-5">
+                        <div class="col d-flex align-items-center">
+                            <a href="">
+                                <h1 class="fw-bold text-light">PressMart</h1>
+                            </a>
+                        </div>
+                        <div class="toggle-menu col d-flex justify-content-end align-items-center d-md-none text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 6l16 0"></path>
+                                <path d="M4 12l16 0"></path>
+                                <path d="M4 18l16 0"></path>
+                            </svg>
+                        </div>
+                        <div class="col d-none d-md-flex justify-content-center align-items-center">
+                            <ul class="d-flex list-unstyled mb-0 gap-4">
+                                <a class="link-hover" href="">
+                                    <li>Home</li>
+                                </a>
+                                <a class="link-hover" href="">
+                                    <li>Shop</li>
+                                </a>
+                                <a class="link-hover" href="">
+                                    <li>Pages</li>
+                                </a>
+                                <a class="link-hover" href="">
+                                    <li>Blog</li>
+                                </a>
+                                <a class="link-hover" href="">
+                                    <li>Elements</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="col d-none d-md-flex justify-content-end align-items-center">
+                            <button class="py-2 rounded-1 border-0">Buy PressMart</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <aside class="menu-drawer">
+                <button class="drawer-close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="drawer-header">
+                    <div class="mb-tap-title active" data-menutab=".menu-mb-cat">
+                        <span>Categories</span>
+                    </div>
+                    <div class="mb-tap-title" data-menutab=".menu-mb-nav">
+                        <span>Menu</span>
+                    </div>
+                </div>
+                <div class="menu-mb-cat active menu-mb-item">
+                    <ul>
+                        <li><a href="" class="shopy-category-link" data-productscategory="Hoodie">Hoodies</a></li>
+                        <li><a href="" class="shopy-category-link" data-productscategory="T-Shirt">T-Shirts</a></li>
+                        <li><a href="" class="shopy-category-link" data-productscategory="Jacket">Jackets</a></li>
+                        <li><a href="" class="shopy-category-link" data-productscategory="Pants">Pants</a></li>
+                        <li><a href="" class="shopy-category-link" data-productscategory="Jeans">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="menu-mb-nav menu-mb-item">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="" class="mb-menu-tap-link">Shop</a></li>
+                        <li><a href="" class="mb-menu-tap-link">Pages</a></li>
+                        <li><a href="" class="mb-menu-tap-link">Blog</a></li>
+                        <li><a href="" class="mb-menu-tap-link">Elements</a></li>
+                        <li><a href="" class="mb-menu-tap-link">Buy</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <section>
+                <div class="mycontainer d-flex flex-column h-100">
+                    <div class="max-w-800 my-5 w-100 m-auto wow animate__fadeInUp" data-wow-duration="1s">
+                        <h2 class="fs-1 fw-bold lh-base text-center text-light my-0  my-md-5">Modern Elementor
+                            WooCommerce WordPress
+                            Theme</h2>
+                    </div>
+                    <div class="introductory-img mt-5 wow animate__fadeInUp" data-wow-duration="1s">
+                        <img src="images/preview-page-main-1.png" alt="preview-page-main" class="w-100">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="unique-pages-sec" class="section-padding">
+            <div id="unique-pages-text" class="wow animate__fadeInUp" data-wow-duration="1.5s">
+                <div class="mycontainer">
+                    <div class="text-center mb-5 mx-3 mx-md-0">
+                        <div class="heading-subtitle">05+</div>
+                        <div class="mb-4">
+                            <h2 class="fw-bold">Unique Home Pages</h2>
+                        </div>
+                        <div class="max-w-800 w-100 m-auto">
+                            <p class="fs-5 text-secondary">PressMart Theme is appropriate for all kind of online shop such as Fashion, Electronic,
+                                Furniture, Organic, Auto Parts, Sport, Grocery, etc...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="unique-pages-content">
+                <div class="mycontainer">
+                    <div class="row mx-3 mx-md-0">
+                        <div class="col-12 col-sm-6 col-md-4 px-3 mb-4 wow animate__fadeInUp" data-wow-duration="0.5s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-1.jpg" alt="preview-home-1">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 1</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 px-3 mb-4 wow animate__fadeInUp" data-wow-duration="1s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-2.jpg" alt="preview-home-2">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 2</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 px-3 mb-4 wow animate__fadeInUp" data-wow-duration="1.5s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-3.jpg" alt="preview-home-3">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 3</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 px-3 mb-4 mb-sm-0 wow animate__fadeInUp" data-wow-duration="0.5s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-4.jpg" alt="preview-home-4">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 4</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 px-3 mb-4 mb-sm-0 wow animate__fadeInUp" data-wow-duration="1s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-5.jpg" alt="preview-home-5">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 5</div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 px-3 wow animate__fadeInUp" data-wow-duration="1.5s">
+                            <a href="">
+                                <img class="w-100 rounded-3 shadow" src="images/preview-home-6.jpg" alt="preview-home-6">
+                            </a>
+                            <div class="text-center mt-4 fw-normal fs-5">Home 6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page-builder-feature" class="bg-light section-padding overflow-hidden">
+            <div class="mycontainer">
+                <div class="row gap-5 mx-3 mx-md-0">
+                    <div class="col-12 col-md wow animate__fadeInLeft" data-wow-duration="1s">
+                        <img class="w-100" src="images/02-elementor.jpg" alt="Page Builder Feature">
+                    </div>
+                    <div class="col-12 col-md my-auto wow animate__fadeInRight" data-wow-duration="1s">
+                        <h2 class="heading-title">Elementor<br>Page Builder</h2>
+                        <p>Build anything with the institutive drag & drop mode of page builder plugin. No coding skills required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mobile-optimized-feature" class="section-padding overflow-hidden">
+            <div class="mycontainer">
+                <div class="row gap-5 mx-3 mx-md-0">
+                    <div class="col-12 col-md my-auto wow animate__fadeInLeft" data-wow-duration="1s">
+                        <h2 class="heading-title">Mobile<br>Optimized</h2>
+                        <p>PressMart is fully responsive design ready to look stunning on any device.</p>
+                    </div>
+                    <div class="col-12 col-md wow animate__fadeInRight" data-wow-duration="1s">
+                        <img class="w-100" src="images/03-mobile-responsive.png" alt="Page Builder Feature">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="smart-filter-feature" class="bg-light section-padding overflow-hidden">
+            <div class="mycontainer">
+                <div class="row gap-5 mx-3 mx-md-0">
+                    <div class="col-12 col-md wow animate__fadeInLeft" data-wow-duration="1s">
+                        <img class="w-100" src="images/product_smart_filter.png" alt="product smart filter">
+                    </div>
+                    <div class="col-12 col-md my-auto wow animate__fadeInRight" data-wow-duration="1s">
+                        <h2 class="heading-title">Ajax<br>Products Filters</h2>
+                        <p>Filter Products by product categories, Attribute, price, rating, etc. without load the page again.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="canvas-cart-feature" class="section-padding overflow-hidden">
+            <div class="mycontainer">
+                <div class="row gap-5 mx-3 mx-md-0">
+                    <div class="col-12 col-md my-auto wow animate__fadeInLeft" data-wow-duration="1s">
+                        <h2 class="heading-title">Ajax<br>Canvas Cart</h2>
+                        <p>PressMart ajax cart allows users to add products in the cart without need to reload entire site reach time.</p>
+                    </div>
+                    <div class="col-12 col-md wow animate__fadeInRight" data-wow-duration="1s">
+                        <img class="w-100" src="images/06-ajax-cart.png" alt="ajax cart">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="key-features-sec" class="bg-light section-padding">
+            <div class="mycontainer">
+                <div class="text-center wow animate__fadeInUp" data-wow-duration="1s">
+                    <h2 class="centered-heading-title">Key Features</h2>
+                    <p>Most powerful PressMart key features.</p>
+                </div>
+                <div class="row justify-content-center mt-1">
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-device-mobile" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z"></path>
+                                    <path d="M11 4h2"></path>
+                                    <path d="M12 17v.01"></path>
+                                </svg>
+                            </div>
+                            <p class="">Fully<br>Responsive</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.4s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-click" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 12l3 0"></path>
+                                    <path d="M12 3l0 3"></path>
+                                    <path d="M7.8 7.8l-2.2 -2.2"></path>
+                                    <path d="M16.2 7.8l2.2 -2.2"></path>
+                                    <path d="M7.8 16.2l-2.2 2.2"></path>
+                                    <path d="M12 12l9 3l-4 2l-2 4l-3 -9"></path>
+                                </svg>
+                            </div>
+                            <p class="">One Click<br>Demo Import</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.6s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-settings" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                                </svg>
+                            </div>
+                            <p class="">Fully<br>Customizable</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.8s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-code" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M7 8l-4 4l4 4"></path>
+                                    <path d="M17 8l4 4l-4 4"></path>
+                                    <path d="M14 4l-4 16"></path>
+                                </svg>
+                            </div>
+                            <p class="">Hook &<br>Filters</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-chart-bar" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                                    <path d="M9 8m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                                    <path d="M15 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                                    <path d="M4 20l14 0"></path>
+                                </svg>
+                            </div>
+                            <p class="">SEO<br>Optimized</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-world" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                    <path d="M3.6 9h16.8"></path>
+                                    <path d="M3.6 15h16.8"></path>
+                                    <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+                                    <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                                </svg>
+                            </div>
+                            <p class="">Multi-Language<br>Support</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-palette" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"></path>
+                                    <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                    <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                </svg>
+                            </div>
+                            <p class="">Unlimited<br>Colors</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.4s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-text-size" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 7v-2h13v2"></path>
+                                    <path d="M10 5v14"></path>
+                                    <path d="M12 19h-4"></path>
+                                    <path d="M15 13v-1h6v1"></path>
+                                    <path d="M18 12v7"></path>
+                                    <path d="M17 19h2"></path>
+                                </svg>
+                            </div>
+                            <p class="">Google<br>Web Fonts</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.6s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-app-window" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                    <path d="M6 8h.01"></path>
+                                    <path d="M9 8h.01"></path>
+                                </svg>
+                            </div>
+                            <p class="">Child Theme<br>Included</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.8s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-tools" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                                    <path d="M14.5 5.5l4 4"></path>
+                                    <path d="M12 8l-5 -5l-4 4l5 5"></path>
+                                    <path d="M7 8l-1.5 1.5"></path>
+                                    <path d="M16 12l5 5l-4 4l-5 -5"></path>
+                                    <path d="M16 17l-1.5 1.5"></path>
+                                </svg>
+                            </div>
+                            <p class="">Powerful<br>Theme Options</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4"></path>
+                                    <path d="M9 15l-4.5 4.5"></path>
+                                    <path d="M14.5 4l5.5 5.5"></path>
+                                </svg>
+                            </div>
+                            <p class="">Smart Sticky<br>Header</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-share" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M8.7 10.7l6.6 -3.4"></path>
+                                    <path d="M8.7 13.3l6.6 3.4"></path>
+                                </svg>
+                            </div>
+                            <p class="">Social<br>Sharing Ready</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-app-window" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                    <path d="M6 8h.01"></path>
+                                    <path d="M9 8h.01"></path>
+                                </svg>
+                            </div>
+                            <p class="">Unlimited<br>Header</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.4s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-app-window" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                    <path d="M6 8h.01"></path>
+                                    <path d="M9 8h.01"></path>
+                                </svg>
+                            </div>
+                            <p class="">Unlimited<br>Footer</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.6s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-layout-dashboard" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M4 4h6v8h-6z"></path>
+                                    <path d="M4 16h6v4h-6z"></path>
+                                    <path d="M14 12h6v8h-6z"></path>
+                                    <path d="M14 4h6v4h-6z"></path>
+                                </svg>
+                            </div>
+                            <p class="">Wide & Boxed<br>Layout</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.8s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-arrows-left-right" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M21 17l-18 0"></path>
+                                    <path d="M6 10l-3 -3l3 -3"></path>
+                                    <path d="M3 7l18 0"></path>
+                                    <path d="M18 20l3 -3l-3 -3"></path>
+                                </svg>
+                            </div>
+                            <p class="">RTL<br>Support</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-discount-2" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M9 15l6 -6"></path>
+                                    <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                                    <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                                    <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                                </svg>
+                            </div>
+                            <p class="">Promotion<br>Bar</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-mail-opened" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M3 9l9 6l9 -6l-9 -6l-9 6"></path>
+                                    <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
+                                    <path d="M3 19l6 -6"></path>
+                                    <path d="M15 13l6 6"></path>
+                                </svg>
+                            </div>
+                            <p class="">Newsletter<br>Pop-up</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-cookie" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M8 13v.01"></path>
+                                    <path d="M12 17v.01"></path>
+                                    <path d="M12 12v.01"></path>
+                                    <path d="M16 14v.01"></path>
+                                    <path d="M11 8v.01"></path>
+                                    <path d="M13.148 3.476l2.667 1.104a4 4 0 0 0 4.656 6.14l.053 .132a3 3 0 0 1 0 2.296c-.497 .786 -.838 1.404 -1.024 1.852c-.189 .456 -.409 1.194 -.66 2.216a3 3 0 0 1 -1.624 1.623c-1.048 .263 -1.787 .483 -2.216 .661c-.475 .197 -1.092 .538 -1.852 1.024a3 3 0 0 1 -2.296 0c-.802 -.503 -1.419 -.844 -1.852 -1.024c-.471 -.195 -1.21 -.415 -2.216 -.66a3 3 0 0 1 -1.623 -1.624c-.265 -1.052 -.485 -1.79 -.661 -2.216c-.198 -.479 -.54 -1.096 -1.024 -1.852a3 3 0 0 1 0 -2.296c.48 -.744 .82 -1.361 1.024 -1.852c.171 -.413 .391 -1.152 .66 -2.216a3 3 0 0 1 1.624 -1.623c1.032 -.256 1.77 -.476 2.216 -.661c.458 -.19 1.075 -.531 1.852 -1.024a3 3 0 0 1 2.296 0z"></path>
+                                </svg>
+                            </div>
+                            <p class="">Cookie<br>Notice</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.4s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-tag" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="8.5" cy="8.5" r="1" fill="currentColor"></circle>
+                                    <path d="M4 7v3.859c0 .537 .213 1.052 .593 1.432l8.116 8.116a2.025 2.025 0 0 0 2.864 0l4.834 -4.834a2.025 2.025 0 0 0 0 -2.864l-8.117 -8.116a2.025 2.025 0 0 0 -1.431 -.593h-3.859a3 3 0 0 0 -3 3z"></path>
+                                </svg>
+                            </div>
+                            <p class="">White<br>Label</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.6s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-brand-chrome" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                    <path d="M12 9h8.4"></path>
+                                    <path d="M14.598 13.5l-4.2 7.275"></path>
+                                    <path d="M9.402 13.5l-4.2 -7.275"></path>
+                                </svg>
+                            </div>
+                            <p class="">Cross<br>Browser</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="0.8s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-file" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                    <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                </svg>
+                            </div>
+                            <p class="">Extensive<br>Documentation</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-lifebuoy" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                    <path d="M15 15l3.35 3.35"></path>
+                                    <path d="M9 15l-3.35 3.35"></path>
+                                    <path d="M5.65 5.65l3.35 3.35"></path>
+                                    <path d="M18.35 5.65l-3.35 3.35"></path>
+                                </svg>
+                            </div>
+                            <p class="">Dedicated<br>Support</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 text-center mt-4 wow animate__fadeInUp" data-wow-duration="1.2s">
+                        <div class="bg-white p-3">
+                            <div class="pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-refresh" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
+                                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"></path>
+                                </svg>
+                            </div>
+                            <p class="">Lifetime<br>Updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-padding overflow-hidden">
+            <div class="mycontainer">
+                <div class="text-center wow animate__fadeInUp" data-wow-duration="1s">
+                    <h2 class="centered-heading-title">How Can We Help You?</h2>
+                    <p>Most powerful key features.</p>
+                </div>
+                <div class="row justify-content-center gap-2 mt-5">
+                    <div class="col-12 col-md wow animate__fadeInLeft" data-wow-duration="1s">
+                        <div class="text-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-file" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="mb-2">Detailed Documentation</h5>
+                            <p>Read Our theme detailed documentation and complete setup your site.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md wow animate__fadeInUp" data-wow-duration="1s">
+                        <div class="text-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-headset" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 14v-3a8 8 0 1 1 16 0v3"></path>
+                                <path d="M18 19c0 1.657 -2.686 3 -6 3"></path>
+                                <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
+                                <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="mb-2">Support Center</h5>
+                            <p>PressMart theme comes with 6 months of free support for every license you purchase.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md wow animate__fadeInRight" data-wow-duration="1s">
+                        <div class="text-center mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="has-main-color icon icon-tabler icon-tabler-tools" width="80" height="80" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4"></path>
+                                <path d="M14.5 5.5l4 4"></path>
+                                <path d="M12 8l-5 -5l-4 4l5 5"></path>
+                                <path d="M7 8l-1.5 1.5"></path>
+                                <path d="M16 12l5 5l-4 4l-5 -5"></path>
+                                <path d="M16 17l-1.5 1.5"></path>
+                            </svg>
+                        </div>
+                        <div class="text-center">
+                            <h5 class="mb-2">Customization Services</h5>
+                            <p>You Need Installation, Customization or Add Specific Functionality Services?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="has-main-bg-color section-padding pb-5">
+        <div class="mycontainer">
+            <div class="d-flex flex-column gap-5 text-center">
+                <h2 class="fs-1 fw-bold text-white wow animate__fadeInUp" data-wow-duration="1s">Start Your Online Store<br>With PressMart</h2>
+                <button class="py-3 px-5 rounded-1 fw-bold m-auto wow animate__fadeInUp" data-wow-duration="1.5s">Purchase Now</button>
+                <p class="text-white fs-6">&#169; <span id="get-current-year"></span> Mohamed Elsayeh. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="scroll-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="42" height="42" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M6 15l6 -6l6 6"></path>
+        </svg>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</body>
+
+</html>

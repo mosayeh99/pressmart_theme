@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* --------Global Rules--------- */
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #059473;
+    --main-transition: 0.3s ease-in-out;
+    --background-color: #eee;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-hover:hover {
+    color: rgba(255,255,255,.8);
+}
+
+button {
+    color: var(--main-color);
+    background-color: white;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #EEEEEE;
+}
+
+/* ------custom selectors------ */
+.section-padding {
+    padding: 100px 0;
+}
+
+.has-main-color {
+    color: var(--main-color);
+}
+
+.has-main-bg-color {
+    background-color: var(--main-color);
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.heading-subtitle {
+    color: var(--main-color);
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.heading-title,
+.centered-heading-title {
+    position: relative;
+    color: #333333;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 20px 0 30px;
+}
+
+.heading-title::after,
+.centered-heading-title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border: 1px solid var(--main-color);
+    bottom: -18px;
+    left: 0;
+}
+
+.centered-heading-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mycontainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .mycontainer {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mycontainer {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mycontainer {
+        width: 1170px;
+    }
+}
+
+/* ----------body overlay---------- */
+body .mb-body-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0 0 0 / 0.7);
+    z-index: 9;
+    visibility: hidden;
+}
+
+/* --------Scroll Top Button--------- */
+#scroll-top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    box-shadow: 0 1px 15px rgba(0 0 0 / 20%);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#scroll-top-btn.active {
+    opacity: 1;
+}
+
+/* ----------Menu Drawer Mobile style----------- */
+.menu-drawer {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: calc(100vw - 100px);
+    height: 100vh;
+    transition: var(--main-transition);
+    left: calc(-100vw - 100px);
+    visibility: hidden;
+    z-index: 99;
+}
+
+.menu-drawer.active {
+    left: 0;
+    visibility: visible;
+}
+
+.menu-drawer .drawer-close-btn {
+    position: absolute;
+    right: -56px;
+    color: white;
+    padding: 12px;
+    background-color: #777;
+}
+
+.menu-drawer .drawer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.menu-drawer .drawer-header .mb-tap-title {
+    flex: 1;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-drawer .drawer-header .mb-tap-title::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+}
+
+.menu-drawer .drawer-header .mb-tap-title.active::after{
+    width: 100%;
+}
+
+.menu-drawer .drawer-header .mb-tap-title span {
+    pointer-events: none;
+}
+
+.menu-drawer .menu-mb-item {
+    display: none;
+}
+
+.menu-drawer .menu-mb-item.active {
+    display: block;
+}
+
+.menu-drawer .menu-mb-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-drawer .menu-mb-item ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50px;
+    padding: 5px 20px;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    transition: var(--main-transition);
+}
